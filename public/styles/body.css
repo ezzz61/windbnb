@@ -1,0 +1,21 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.emulated-flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -12px 0 0 -12px;
+  width: calc(100% + 12px);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+
+.width-card {
+  max-width: 380px;
+}
