@@ -37,26 +37,6 @@ export default function StaySection() {
             type={item.type}
             rating={item.rating}
           />
-          <div className="width-card">
-      <figure className="overflow-hidden rounded-3xl h-60">
-        <img src={item.photo} alt="" />
-      </figure>
-      <div className="flex justify-between mt-4">
-        <div className="flex items-center gap-x-2">
-          {item.superHost && (
-            <p className="border-2 border-gray-600 text-gray-600 px-2 lg:px-3 font-bold py-2 text-sm rounded-2xl">
-              SUPER HOST
-            </p>
-          )}
-          <h1 className="text-md text-gray-400">{item.type}</h1>
-        </div>
-        <span className="flex items-center gap-x-2">
-          <img src="/icons/star.svg" alt="" />
-          <p>{item.rating}</p>
-        </span>
-      </div>
-      <h4 className="text-lg font-semibold mt-4 text-gray-600">{item.title}</h4>
-    </div>
         ))}
       </motion.section>
     </section>

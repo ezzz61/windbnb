@@ -39,10 +39,10 @@ export default function GuestSection() {
         </div>
       </div>
       {isGuestActive && (
-        <>
+        <React.Fragment>
           <IncreaseGuest title="Adult" desc="Ages 13 or above" type="adult" />
           <IncreaseGuest title="Childern" desc="Ages 2-12" type="kid" />
-        </>
+        </React.Fragment>
       )}
     </div>
   );

@@ -33,12 +33,12 @@ export default function LocationSection() {
         />
       </div>
       {isLocationActive && (
-        <>
+        <React.Fragment>
           <LocationItem location="Helsinki" />
           <LocationItem location="Turku" />
           <LocationItem location="Oulu" />
           <LocationItem location="Vaasa" />
-        </>
+        </React.Fragment>
       )}
     </div>
   );

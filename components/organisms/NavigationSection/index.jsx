@@ -60,7 +60,7 @@ export default function NavigationSection() {
     dispatch(uiAction.hideMenu());
   };
   return (
-    <>
+    <React.Fragment>
       <motion.section
         variants={navbarVariant}
         transition={navbarVariant.transition}
@@ -88,7 +88,7 @@ export default function NavigationSection() {
         onClick={hiddenNavigationMenu}
         className="min-h-screen fixed min-w-full"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", zIndex: 10 }}
-      />
-    </>
+      ></motion.div>
+    </React.Fragment>
   );
 }
