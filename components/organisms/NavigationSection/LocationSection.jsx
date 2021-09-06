@@ -3,6 +3,7 @@ import LocationItem from "./LocationItem";
 import { useDispatch, useSelector } from "react-redux";
 import { uiAction } from "../../../store/ui-slice";
 import { filterAction } from "../../../store/filter-silce";
+import { motion } from "framer-motion";
 
 export default function LocationSection() {
   const locationValue = useSelector((state) => state.filter.location);

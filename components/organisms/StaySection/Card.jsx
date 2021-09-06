@@ -5,8 +5,8 @@ export default function Card(props) {
   const { img, type, title, rating, superHost } = props;
   return (
     <div className="width-card">
-      <figure className="overflow-hidden rounded-3xl h-60">
-        <img src={img} alt="" />
+      <figure className="overflow-hidden rounded-3xl width-card h-60 hover:scale-105 transition-all">
+        <img className="object-cover" src={img} alt="" />
       </figure>
       <div className="flex justify-between mt-4">
         <div className="flex items-center gap-x-2">

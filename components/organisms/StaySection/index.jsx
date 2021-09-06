@@ -12,21 +12,7 @@ export default function StaySection() {
         <h1 className="text-2xl lg:text-4xl font-bold text-gray-600">Stays in Finland</h1>
         <span className="text-gray-600 text-lg">12+ stays</span>
       </div>
-      <motion.section
-        initial={{ x: "100vh" }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          transition: {
-            duration: 0.3,
-            type: "spring",
-            stiffness: 65,
-            staggerChildren: 0.1,
-          },
-        }}
-        transition={{ duration: 0.8, type: "spring", staggerChildren: 0.1 }}
-        className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-14"
-      >
+      <section className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-14">
         {staysLocation.length === 0 && <h1>Not found</h1>}
         {staysLocation.map((item) => (
           <Card
@@ -38,7 +24,7 @@ export default function StaySection() {
             rating={item.rating}
           />
         ))}
-      </motion.section>
+      </section>
     </section>
   );
 }

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { filterAction } from "../../../store/filter-silce";
 import { uiAction } from "../../../store/ui-slice";
 import IncreaseGuest from "./IncreaseGuest";
+import { motion } from "framer-motion";
 
 export default function GuestSection() {
   const isGuestActive = useSelector((state) => state.ui.isGuestActive);
@@ -22,8 +23,8 @@ export default function GuestSection() {
   };
 
   return (
-    <div onClick={guestActiveHandler} className="lg:w-7/12">
-      <div className="shadow-xl rounded-3xl flex items-center">
+    <div onClick={guestActiveHandler} className="lg:w-7/12 transition-all">
+      <div className="shadow-xl rounded-3xl flex items-center transition-all">
         <div className={`w-7/12 rounded-3xl px-8 py-2 border-2 ${active}`}>
           <h1 className="text-sm font-bold">GUESTS</h1>
           <div className="">
