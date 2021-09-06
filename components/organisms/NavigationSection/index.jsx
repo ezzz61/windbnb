@@ -55,6 +55,9 @@ export default function NavigationSection() {
       if (locationValue.length && guestsValue === 1) {
         return item.city === locationValue;
       }
+      if (!locationValue.length && guestsValue > 1) {
+        return item.maxGuests === guestsValue;
+      }
     });
     dispatch(filterAction.filterStaysLocation(filterLocation));
     dispatch(uiAction.hideMenu());
